@@ -44,6 +44,8 @@ extension MainViewController: CLLocationManagerDelegate {
                     self.setCurrentData(data: data)
                     self.setHourlyData(hourly: data.hourly)
                     self.configureCollectionView()
+                    self.setDailyData(daily: data.daily)
+                    self.configureTableView()
                 case .failure(let fail):
                     print(fail.localizedDescription)
                 }

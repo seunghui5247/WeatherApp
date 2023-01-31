@@ -19,6 +19,7 @@
 		FB3476D42989043000D46724 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3476D32989043000D46724 /* CollectionViewController.swift */; };
 		FB3476D62989044A00D46724 /* DailyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3476D52989044A00D46724 /* DailyCell.swift */; };
 		FB3476D82989045500D46724 /* HourlyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3476D72989045500D46724 /* HourlyCell.swift */; };
+		FB3476DA2989057100D46724 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3476D92989057100D46724 /* TableViewController.swift */; };
 		FB8D94A42988FCD00045E298 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8D94A32988FCD00045E298 /* AppDelegate.swift */; };
 		FB8D94A62988FCD00045E298 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8D94A52988FCD00045E298 /* SceneDelegate.swift */; };
 		FB8D94A82988FCD00045E298 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8D94A72988FCD00045E298 /* MainViewController.swift */; };
@@ -39,6 +40,7 @@
 		FB3476D32989043000D46724 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		FB3476D52989044A00D46724 /* DailyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyCell.swift; sourceTree = "<group>"; };
 		FB3476D72989045500D46724 /* HourlyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyCell.swift; sourceTree = "<group>"; };
+		FB3476D92989057100D46724 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		FB8D94A02988FCD00045E298 /* weatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB8D94A32988FCD00045E298 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB8D94A52988FCD00045E298 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 				FB3476BF2989003700D46724 /* BaseViewController.swift */,
 				FB3476C12989017100D46724 /* NetworkViewController.swift */,
 				FB3476D32989043000D46724 /* CollectionViewController.swift */,
+				FB3476D92989057100D46724 /* TableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -237,6 +240,7 @@
 				FB8D94A82988FCD00045E298 /* MainViewController.swift in Sources */,
 				FB3476CD298901E800D46724 /* Hourly.swift in Sources */,
 				FB3476D62989044A00D46724 /* DailyCell.swift in Sources */,
+				FB3476DA2989057100D46724 /* TableViewController.swift in Sources */,
 				FB8D94A42988FCD00045E298 /* AppDelegate.swift in Sources */,
 				FB8D94A62988FCD00045E298 /* SceneDelegate.swift in Sources */,
 				FB3476CB298901DC00D46724 /* Daily.swift in Sources */,

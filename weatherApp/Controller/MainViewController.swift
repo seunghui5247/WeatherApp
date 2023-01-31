@@ -89,9 +89,16 @@ class MainViewController: BaseViewController {
         return cv
     }()
     
+    private lazy var tableView: UITableView = {
+        let tableView = UITableView()
+        tableView.rowHeight = 55
+        
+        return tableView
+    }()
+    
     private lazy var vStackView: UIStackView = {
         let stackView = UIStackView(arrangedSubviews: [
-            labelStackView, tempStackView, hourlyView, collectionView
+            labelStackView, tempStackView, hourlyView, collectionView, tableView
         ])
         stackView.axis = .vertical
         stackView.alignment = .center
@@ -106,6 +113,7 @@ class MainViewController: BaseViewController {
     var longitude: Double?
     var apiKey = "7cecc91107317b855b34f68b7abf470b"
     static var hourlyData: [Hourly] = []
+    static var dailyData: [Daily] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -116,6 +124,10 @@ class MainViewController: BaseViewController {
     func setHourlyData(hourly: [Hourly]) {
         MainViewController.hourlyData = hourly
     }
+    
+    func setDailyData(daily: [Daily]) {
+        MainViewController.dailyData = daily
+    }
 }
 
 extension MainViewController {
@@ -125,6 +137,7 @@ extension MainViewController {
         tempStackViewConstraints()
         hourlyViewConstraints()
         collectionViewConstraints()
+        tableViewConstraints()
     }
     
     private func vStackViewConstraints() {
@@ -187,6 +200,18 @@ extension MainViewController {
         
         NSLayoutConstraint.activate(layout)
     }
+    
+    private func tableViewConstraints() {
+        self.tableView.translatesAutoresizingMaskIntoConstraints = false
+        
+        let layout = [
+            self.tableView.topAnchor.constraint(equalTo: hourlyView.topAnchor, constant: 100),
+            self.tableView.leadingAnchor.constraint(equalTo: vStackView.leadingAnchor, constant: 40),
+            self.tableView.trailingAnchor.constraint(equalTo: vStackView.trailingAnchor, constant: -60)
+        ]
+        
+        NSLayoutConstraint.activate(layout)
+    }
 }
 
 extension MainViewController {
@@ -203,5 +228,10 @@ extension MainViewController {
         collectionView.register(HourlyCell.self, forCellWithReuseIdentifier: HourlyCell.cellId)
         collectionView.dataSource = self
         collectionView.delegate = self
+    }
+    
+    func configureTableView() {
+        tableView.register(DailyCell.self, forCellReuseIdentifier: DailyCell.cellId)
+        tableView.dataSource = self
     }
 }
