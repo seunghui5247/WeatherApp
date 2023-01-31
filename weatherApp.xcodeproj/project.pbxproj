@@ -16,6 +16,9 @@
 		FB3476CD298901E800D46724 /* Hourly.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3476CC298901E800D46724 /* Hourly.swift */; };
 		FB3476CF298901F100D46724 /* Temp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3476CE298901F100D46724 /* Temp.swift */; };
 		FB3476D1298901F900D46724 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3476D0298901F900D46724 /* Weather.swift */; };
+		FB3476D42989043000D46724 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3476D32989043000D46724 /* CollectionViewController.swift */; };
+		FB3476D62989044A00D46724 /* DailyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3476D52989044A00D46724 /* DailyCell.swift */; };
+		FB3476D82989045500D46724 /* HourlyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3476D72989045500D46724 /* HourlyCell.swift */; };
 		FB8D94A42988FCD00045E298 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8D94A32988FCD00045E298 /* AppDelegate.swift */; };
 		FB8D94A62988FCD00045E298 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8D94A52988FCD00045E298 /* SceneDelegate.swift */; };
 		FB8D94A82988FCD00045E298 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8D94A72988FCD00045E298 /* MainViewController.swift */; };
@@ -33,6 +36,9 @@
 		FB3476CC298901E800D46724 /* Hourly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hourly.swift; sourceTree = "<group>"; };
 		FB3476CE298901F100D46724 /* Temp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Temp.swift; sourceTree = "<group>"; };
 		FB3476D0298901F900D46724 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		FB3476D32989043000D46724 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		FB3476D52989044A00D46724 /* DailyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyCell.swift; sourceTree = "<group>"; };
+		FB3476D72989045500D46724 /* HourlyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyCell.swift; sourceTree = "<group>"; };
 		FB8D94A02988FCD00045E298 /* weatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB8D94A32988FCD00045E298 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB8D94A52988FCD00045E298 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +61,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FB3476D22989041E00D46724 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FB3476D52989044A00D46724 /* DailyCell.swift */,
+				FB3476D72989045500D46724 /* HourlyCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		FB8D94972988FCD00045E298 = {
 			isa = PBXGroup;
 			children = (
@@ -126,9 +141,11 @@
 		FB8D94BB2988FD200045E298 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				FB3476D22989041E00D46724 /* Cell */,
 				FB8D94A72988FCD00045E298 /* MainViewController.swift */,
 				FB3476BF2989003700D46724 /* BaseViewController.swift */,
 				FB3476C12989017100D46724 /* NetworkViewController.swift */,
+				FB3476D32989043000D46724 /* CollectionViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -209,14 +226,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB3476D42989043000D46724 /* CollectionViewController.swift in Sources */,
 				FB3476C02989003700D46724 /* BaseViewController.swift in Sources */,
 				FB3476C22989017100D46724 /* NetworkViewController.swift in Sources */,
 				FB3476C7298901CD00D46724 /* WeatherType.swift in Sources */,
 				FB3476C9298901D700D46724 /* Current.swift in Sources */,
 				FB3476D1298901F900D46724 /* Weather.swift in Sources */,
+				FB3476D82989045500D46724 /* HourlyCell.swift in Sources */,
 				FB8D94BD2988FD4B0045E298 /* Cordinator.swift in Sources */,
 				FB8D94A82988FCD00045E298 /* MainViewController.swift in Sources */,
 				FB3476CD298901E800D46724 /* Hourly.swift in Sources */,
+				FB3476D62989044A00D46724 /* DailyCell.swift in Sources */,
 				FB8D94A42988FCD00045E298 /* AppDelegate.swift in Sources */,
 				FB8D94A62988FCD00045E298 /* SceneDelegate.swift in Sources */,
 				FB3476CB298901DC00D46724 /* Daily.swift in Sources */,
